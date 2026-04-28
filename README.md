@@ -18,28 +18,23 @@ BrasilAPI: https://brasilapi.com.br/api/cep/v1/{cep}
 ViaCEP: http://viacep.com.br/ws/{cep}/json/
 Requisitos Técnicos
 
-1. Requisições Simultâneas: 
+1. Requisições Simultâneas: O seu sistema deve fazer a requisição para as duas APIs ao mesmo tempo (paralelamente).
 
-O seu sistema deve fazer a requisição para as duas APIs ao mesmo tempo (paralelamente).
-2. Race Condition (Corrida):
+2. Race Condition (Corrida): O sistema deve aceitar apenas a resposta da API que responder mais rápido e descartar a resposta da outra (mais lenta).
 
-O sistema deve aceitar apenas a resposta da API que responder mais rápido e descartar a resposta da outra (mais lenta).
 3. Output (Saída): O resultado da requisição deve ser exibido na linha de comando (terminal), contendo:
-
 Os dados do endereço recebido.
 Qual API entregou a resposta (BrasilAPI ou ViaCEP).
 
 4. Timeout: O tempo limite de resposta é de 1 segundo.
 
 Caso nenhuma das APIs responda dentro desse tempo, o sistema deve exibir um erro de timeout.
- 
 
 Tecnologias
 
 Linguagem: Go (Golang)
 
 Conceitos: Goroutines, Channels, Select, Package net/http.
-
  
 
 Entregável
@@ -47,7 +42,6 @@ Entregável
 Link do Repositório: O link para o seu repositório no GitHub contendo o código fonte.
 
 README: Instruções de como rodar o projeto.
-
  
 
 Regras de Entrega
