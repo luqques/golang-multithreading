@@ -23,8 +23,8 @@ Requisitos Técnicos
 2. Race Condition (Corrida): O sistema deve aceitar apenas a resposta da API que responder mais rápido e descartar a resposta da outra (mais lenta).
 
 3. Output (Saída): O resultado da requisição deve ser exibido na linha de comando (terminal), contendo:
-Os dados do endereço recebido.
-Qual API entregou a resposta (BrasilAPI ou ViaCEP).
+- Os dados do endereço recebido.
+- Qual API entregou a resposta (BrasilAPI ou ViaCEP).
 
 4. Timeout: O tempo limite de resposta é de 1 segundo.
 
